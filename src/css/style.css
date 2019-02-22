@@ -39,6 +39,12 @@ img {
   padding: 18px 30px;
 }
 
+.button:hover {
+  cursor: pointer;
+  background-color: #333333;
+  color: #ffd200;
+}
+
 /* Импорт стилей шапки */
 .navbar {
   padding: 8px 0;
