@@ -4,7 +4,7 @@
   font-family: 'Museo Sans Light';
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -18,7 +18,7 @@
 
 body {
   font-family: 'Museo Sans Light', sans-serif;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 img {
@@ -102,7 +102,6 @@ img {
 
 .navbar__adress {
   font-size: 13px;
-  font-weight: 400;
 }
 
 .navbar__phone {
@@ -149,16 +148,25 @@ img {
   background-color: #f5f5f5;
 }
 
-.hero-block {
+.hero-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+.hero-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .hero-text {
-  -ms-flex-preferred-size: 44%;
-      flex-basis: 44%;
-  padding-right: 120px;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  padding-right: 100px;
 }
 
 .hero-text__title {
