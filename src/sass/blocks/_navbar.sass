@@ -18,12 +18,12 @@
     text-decoration: none
     color: $text-color
     font-size: 20px
-    font-weight: 600
-    margin-top: 9px
+    margin-top: 8px
+    +bold
   &__button
     margin-left: 30px
     font-size: 13px
-    font-weight: 650
+    +bold
 @media (max-width: 768px)
   .navbar
     padding: 17px auto
@@ -33,7 +33,7 @@
       display: none
     &__button
       font-size: 10px
-      font-weight: 650
+      +bold
       padding: 15px 26px
     &__logo
       width: 90px
