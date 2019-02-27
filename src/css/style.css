@@ -16,13 +16,19 @@
   font-style: normal;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 600;
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .container {
@@ -59,8 +65,17 @@ img {
 
 .button:hover {
   cursor: pointer;
-  background-color: #333333;
-  color: #ffd200;
+  background-color: #ffe980;
+}
+
+.section-title {
+  font-size: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 16px;
 }
 
 /* Импорт стилей шапки */
@@ -164,8 +179,8 @@ img {
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   padding-right: 100px;
 }
 
@@ -198,6 +213,10 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 24px;
+}
+
+.hero-list__item:last-child {
+  margin-bottom: 0;
 }
 
 .hero-list__image {
@@ -270,4 +289,22 @@ img {
   .hero-list__image {
     margin-right: 15px;
   }
+}
+
+/* Импорт стилей для offer */
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  padding-top: 84px;
+}
+
+.offer__title {
+  max-width: 360px;
+  line-height: 35px;
+  margin-top: 0;
+}
+
+.offer__subtitle {
+  max-width: 250px;
+  display: block;
 }

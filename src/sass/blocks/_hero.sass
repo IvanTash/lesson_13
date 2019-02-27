@@ -2,12 +2,12 @@
   &-image
     display: flex
   padding: 50px 0
-  background-color: #f5f5f5
+  background-color: $secondary
   &-block 
     display: flex
     justify-content: space-between
   &-text 
-    flex-basis: 40%
+    flex-basis: 50%
     padding-right: 100px
     &__title
       font-size: 41px
@@ -26,6 +26,8 @@
       display: flex
       align-items: center
       margin-bottom: 24px
+      &:last-child
+        margin-bottom: 0
     &__image
       min-width: 40px
       min-height: 40px
