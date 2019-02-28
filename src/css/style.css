@@ -71,6 +71,15 @@ body {
 
 .section-subtitle {
   font-size: 16px;
+  display: block;
+}
+
+.input {
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 20px;
 }
 
 /* Импорт стилей шапки */
@@ -182,6 +191,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-height: 488px;
 }
 
 .hero-block {
@@ -218,6 +228,7 @@ img {
 .hero-list {
   margin: 0;
   padding: 0;
+  padding-bottom: 60px;
 }
 
 .hero-list__item {
@@ -307,10 +318,29 @@ img {
 }
 
 /* Импорт стилей для offer */
+.offer {
+  background: url(..//img/offer/offer-bg.png) no-repeat;
+  background-position: center right;
+  background-size: contain;
+  position: relative;
+}
+
+.offer:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+
 .offer-block {
   width: 50%;
   padding-right: 90px;
-  padding-top: 84px;
+  padding-top: 54px;
+  position: relative;
+  margin-bottom: 92px;
 }
 
 .offer__title {
@@ -322,4 +352,109 @@ img {
 .offer__subtitle {
   max-width: 250px;
   display: block;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.offer__input {
+  margin-bottom: 28px;
+  width: 240px;
+  padding-left: 30px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+  padding-left: 25px;
+}
+
+.offer__button {
+  width: 100%;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  margin-bottom: 25px;
+  padding-top: 26px;
+  padding-bottom: 27px;
+}
+
+.offer__text {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 24px;
+  width: 240px;
+}
+
+.offer__text:last-child {
+  padding-left: 48px;
+}
+
+.offer__phone {
+  font-size: 15px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 13px;
+  }
+  .offer__text {
+    display: block;
+    width: 100%;
+  }
+  .offer__text:last-child {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: #ffffff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+  .offer__title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    width: 92%;
+    margin-bottom: 8px;
+  }
+  .offer__subtitle {
+    font-size: 14px;
+    margin-bottom: 26px;
+  }
+  .offer__input {
+    max-width: 96%;
+    margin-bottom: 8px;
+    padding-left: 21px;
+  }
+  .offer__input:first-child {
+    padding-left: 21px;
+  }
+  .offer__button {
+    max-width: 96%;
+    font-size: 14px;
+    padding: 19px 62px 19px 64px;
+    margin-bottom: 22px;
+  }
+  .offer__text {
+    padding-left: 7px;
+    margin-bottom: 6px;
+  }
+  .offer__text:last-child {
+    padding-left: 7px;
+    margin-bottom: 3px;
+  }
 }

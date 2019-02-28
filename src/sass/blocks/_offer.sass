@@ -1,13 +1,108 @@
 .offer
+  background: url(..//img/offer/offer-bg.png) no-repeat
+  background-position: center right
+  background-size: contain
+  position: relative
+  &:before
+    content: ''
+    width: 50%
+    height: 100%
+    position: absolute
+    background-color: #fff
+    top: 0
+    left: 0
   &-block
     width: 50%
     padding-right: 90px
-    padding-top: 84px
+    padding-top: 54px
+    position: relative
+    margin-bottom: 92px
   &__title
     max-width: 360px
     line-height: 35px
-    margin-top: 0
-    
+    margin-top: 0    
   &__subtitle
     max-width: 250px
     display: block
+    margin-top: 20px
+    margin-bottom: 30px
+  &__input
+    margin-bottom: 28px
+    width: 240px
+    padding-left: 30px
+    &:first-child
+      margin-right: 10px
+      padding-left: 25px
+  &__button
+    width: 100%
+    +bold
+    margin-bottom: 25px
+    padding-top: 26px
+    padding-bottom: 27px
+  &__text
+    display: inline-block
+    font-size: 15px
+    line-height: 24px
+    width: 240px
+    &:last-child
+      padding-left: 48px
+  &__phone
+    font-size: 15px
+    line-height: 24px
+    text-decoration: none
+    color: $text-color
+    +bold
+      
+    
+  
+  
+
+    
+@media (max-width: 1200px)
+  .offer
+    background-size: cover
+    &__input
+      width: 100%
+      margin-bottom: 10px
+    &__button
+      font-size: 13px
+    &__text
+      display: block
+      width: 100%
+      &:last-child
+        padding-left: 0px
+@media (max-width: 768px)
+  .offer
+    background: #ffffff
+    &-block
+      width: 100%
+      padding-right: 0
+    &__title
+      font-size: 18px
+      font-weight: 400
+      line-height: 1.2
+      width: 92%
+      margin-bottom: 8px
+    &__subtitle
+      font-size: 14px
+      margin-bottom: 26px
+    &__input
+      max-width: 96%
+      margin-bottom: 8px
+      padding-left: 21px
+      &:first-child
+        padding-left: 21px
+    &__button
+      max-width: 96%
+      font-size: 14px
+      padding: 19px 62px 19px 64px
+      margin-bottom: 22px
+    &__text
+      padding-left: 7px
+      margin-bottom: 6px
+      &:last-child
+        padding-left: 7px
+        margin-bottom: 3px
+
+
+
