@@ -9,3 +9,12 @@ button.addEventListener('click', function() {
 close.addEventListener('click', function() {
   modal.classList.remove('modal_active');
 });
+
+function func() {
+  modal.classList.remove('modal_active');
+};
+
+setInterval(func, 5000);
+
+
+
