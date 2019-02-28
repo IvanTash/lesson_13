@@ -82,6 +82,11 @@ body {
   padding: 20px;
 }
 
+.input:focus {
+  border: 1px solid #ffd200;
+  outline: none;
+}
+
 /* Импорт стилей шапки */
 .navbar {
   padding: 8px 0;
