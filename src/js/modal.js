@@ -10,3 +10,9 @@ $(document).ready(function() {
     modal.removeClass('modal_active');
   });
 });
+
+function func() {
+  modal.classList.remove('modal_active');
+};
+
+setInterval(func, 5000);
