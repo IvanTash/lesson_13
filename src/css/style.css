@@ -512,3 +512,15 @@ img {
   top: 0;
   right: 0;
 }
+
+.totop {
+  width: auto;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'Museo Sans Bold';
+}
