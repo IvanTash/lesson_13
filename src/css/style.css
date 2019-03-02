@@ -465,6 +465,22 @@ img {
 }
 
 /* Импорт стилей модального окна*/
+.all {
+  display: none;
+}
+
+.all_active {
+  content: '';
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
 .modal {
   position: fixed;
   left: 0;
