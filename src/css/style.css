@@ -169,6 +169,9 @@ body {
   .navbar__logo {
     width: 90px;
   }
+  .navbar__logo img {
+    width: 100%;
+  }
 }
 
 /* Импорт стилей Hero */
