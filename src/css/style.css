@@ -816,6 +816,15 @@ body {
 }
 
 @media (max-width: 768px) {
+  .step__text {
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 130px;
+    padding-bottom: 30px;
+  }
+  .step__image {
+    margin-bottom: 20px;
+  }
   .step:after {
     display: none;
   }
@@ -824,5 +833,16 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .steps__title {
+    font-size: 18px;
+    line-height: 1.2;
+    padding-top: 25px;
+    margin-bottom: 27px;
+  }
+  .steps__subtitle {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 33px;
   }
 }
