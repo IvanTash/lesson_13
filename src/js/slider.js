@@ -1,4 +1,5 @@
-$(document).ready(function() {
+new WOW().init(); //Инициализация wow.js
+$(document).ready(function() { // инициализация слайдера
   $('.slider').slick( {
     infinite: true,
   slidesToShow: 3,

@@ -8,6 +8,7 @@
   <title>Урок №13</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -29,7 +30,7 @@
             </a>
           </div>
           <!-- /.navbar__contacts -->
-          <button class="button navbar__button" id="button">Перезвоните мне</button>
+          <button class="button navbar__button wow rubberBand" data-wow-iteration = "5" data-wow-duration="2s" id="button">Перезвоните мне</button>
           <!-- /.button navbar__button -->
           </navbar__info>
         </div>
@@ -93,14 +94,13 @@
             дизайн-проект Вашего жилья и реализуем его!
             </h2>
           <!-- /.section-title -->
-          <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку 
-            бесплатного дизайн-проекта!
+          <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!
             </span>
           <!-- /.section-suntitle -->
           <form action="#" class="form offer__form">
-            <input type="text" class="input offer__input" placeholder="Ваше имя">
-            <input type="tell" class="input offer__input" placeholder="Ваш телефон">
-            <button class="button offer__button">Получить бесплатный дизайн-проект
+            <input type="text" class="input offer__input wow fadeInRight" data-wow-delay = "0.5s" placeholder="Ваше имя">
+            <input type="tell" class="input offer__input wow fadeInRight" data-wow-delay = "1s" placeholder="Ваш телефон">
+            <button class="button offer__button wow fadeInRight" data-wow-delay = "1.5s">Получить бесплатный дизайн-проект
             </button>
             <div class="offer__text">Наш менеджер перезвонит Вам<br>
               в течение 60 секунд
@@ -147,7 +147,7 @@
       </span>
       <!-- /.section-subtitle price__subtitle -->
       <div class="cards">
-        <div class="card price__card">
+        <div class="card price__card wow fadeInRightBig" data-wow-delay = "0.5s">
           <div class="card__image"><img src="img/price/bathroom.jpg" alt="Картинка"></div>
           <!-- /.card__image -->
           <div class="card__text">
@@ -160,7 +160,7 @@
           <!-- /.card__text -->
         </div>
         <!-- /.card -->
-        <div class="card price__card">
+        <div class="card price__card wow fadeInRightBig" data-wow-delay = "1s">
           <div class="card__image"><img src="img/price/home.jpg" alt="Картинка"></div>
           <!-- /.card__image -->
           <div class="card__text">
@@ -174,7 +174,7 @@
           <!-- /.card__text -->
         </div>
         <!-- /.card -->
-        <div class="card price__card">
+        <div class="card price__card wow fadeInRightBig" data-wow-delay = "1.5s">
           <div class="card__image"><img src="img/price/office.jpg" alt="Картинка"></div>
           <!-- /.card__image -->
           <div class="card__text">
@@ -187,7 +187,7 @@
           <!-- /.card__text -->
         </div>
         <!-- /.card -->
-        <div class="card price__card">
+        <div class="card price__card wow fadeInLeftBig" data-wow-delay = "3s">
           <div class="card__image"><img src="img/price/home2.jpg" alt="Картинка"></div>
           <!-- /.card__image -->
           <div class="card__text">
@@ -201,7 +201,7 @@
           <!-- /.card__text -->
         </div>
         <!-- /.card -->
-        <div class="card price__card">
+        <div class="card price__card wow fadeInLeftBig" data-wow-delay = "2.5s">
           <div class="card__image"><img src="img/price/kitchen.jpg" alt="Картинка"></div>
           <!-- /.card__image -->
           <div class="card__text">
@@ -214,7 +214,7 @@
           <!-- /.card__text -->
         </div>
         <!-- /.card -->
-        <div class="card price__card">
+        <div class="card price__card wow fadeInLeftBig" data-wow-delay = "2s">
           <div class="card__image"><img src="img/price/roof.jpg" alt="Картинка"></div>
           <!-- /.card__image -->
           <div class="card__text">
@@ -255,6 +255,7 @@
 <script src="js/modal.js"></script>
 <script src="js/totop.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/slider.js"></script>
 </body>
 
