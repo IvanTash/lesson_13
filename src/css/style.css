@@ -44,6 +44,9 @@ body {
   }
 }
 
+/*   .section
+    padding-top: 60px
+    padding-bottom: 60px */
 @media (max-width: 567px) {
   .container {
     max-width: 400px;
@@ -961,4 +964,116 @@ body {
 
 .form__description {
   font-size: 15px;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .interview {
+    padding-right: 30px;
+  }
+  .interview__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .interview__subtitle {
+    margin-bottom: 35px;
+  }
+  .interview-list__text {
+    font-size: 14px;
+    max-width: 300px;
+  }
+  .interview-list__counter {
+    margin-right: 20px;
+  }
+  .brif__form {
+    padding-left: 30px;
+  }
+  .form__title {
+    font-size: 20px;
+    margin-bottom: 45px;
+  }
+  .form__subtitle {
+    margin-bottom: 35px;
+  }
+  .form__button {
+    font-size: 16px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .brif {
+    background-image: url(../img/brif/brif-bg-color.png), url(../img/brif/brif-bg.jpg);
+    background-position: left top, center bottom;
+    background-size: 100% 50%, cover;
+    background-repeat: repeat-x, no-repeat;
+  }
+  .brif-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .brif__form {
+    padding: 0;
+  }
+  .brif__input {
+    width: 95%;
+    margin-bottom: 7px;
+  }
+  .brif__button {
+    margin-top: 3px;
+    width: 95%;
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  .interview {
+    padding-right: 0px;
+    padding-left: 6px;
+  }
+  .interview__title {
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 44px;
+    margin-bottom: 13px;
+    max-width: 220px;
+  }
+  .interview__subtitle {
+    font-size: 14px;
+    max-width: 175px;
+  }
+  .interview-list {
+    padding-bottom: 0;
+  }
+  .interview-list__counter {
+    margin-right: 8px;
+  }
+  .interview-list__text {
+    max-width: 235px;
+  }
+  .interview-list__item {
+    margin-bottom: 25px;
+  }
+  .form__title {
+    font-size: 18px;
+    line-height: 25.35px;
+    margin-top: 100px;
+    margin-bottom: 15px;
+  }
+  .form__subtitle {
+    font-size: 14px;
+    line-height: 26.88px;
+    margin-bottom: 30px;
+  }
+  .form__description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 140px;
+    text-align: center;
+    font-size: 14px;
+    margin: auto;
+    line-height: 24px;
+  }
 }
