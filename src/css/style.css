@@ -98,6 +98,14 @@ body {
   cursor: pointer;
 }
 
+.invalid {
+  border: 1px solid red;
+}
+
+#username-error, #phone-error, #email-error {
+  border: none;
+}
+
 /* Импорт стилей шапки */
 .navbar {
   padding: 8px 0;

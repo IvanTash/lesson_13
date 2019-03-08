@@ -2,6 +2,8 @@ new WOW().init(); //Инициализация wow.js
 $(document).ready(function() { 
   /* Валидиация формы brif*/
   $('#brif-form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
     rules: {
       username: {
         required: true,
@@ -30,6 +32,8 @@ $(document).ready(function() {
   })
   /* Валидация формы offer */
   $('#offer-form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
     rules: {
       username: {
         required: true,
