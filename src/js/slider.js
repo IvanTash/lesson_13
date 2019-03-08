@@ -16,7 +16,11 @@ $(document).ready(function() {
       }
     },
     messages: {
-      username: "Заполните поле",
+      username: {
+        required: "Заполните поле",
+        minlength: jQuery.validator.format("Минимум {0} символа"),
+        maxlength: jQuery.validator.format("Максимум {0} символов")
+      },
       email: {
         required: "Заполните поле",
         email: "Введите корректный email",
@@ -37,7 +41,11 @@ $(document).ready(function() {
       },
     },
     messages: {
-      username: "Заполните поле",
+      username: {
+        required: "Заполните поле",
+        minlength: jQuery.validator.format("Минимум {0} символа"),
+        maxlength: jQuery.validator.format("Максимум {0} символов"),
+      },
       phone: "Укажите телефон",
     }
   });
