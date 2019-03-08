@@ -1089,5 +1089,120 @@ body {
     font-size: 14px;
     margin: auto;
     line-height: 24px;
+    padding-bottom: 28px;
+  }
+}
+
+/* Импорт стилей блока footer*/
+.footer {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 90px;
+  padding-left: 215px;
+}
+
+.contacts-list {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 93px;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 33px;
+}
+
+.contacts-list__info {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.contacts-list__icon {
+  margin-right: 22px;
+}
+
+.contacts-list__phone {
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.contacts-list__text {
+  margin-top: -5px;
+}
+
+.contacts__title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  margin-top: 0;
+  max-width: 295px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .map {
+    width: 100%;
+    position: relative;
+  }
+  .contacts {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-top: 65px;
+    padding-left: 9px;
+  }
+  .contacts__title {
+    font-size: 18px;
+    margin-bottom: 39px;
+    line-height: 1.2;
+  }
+  .contacts-list {
+    margin-top: 0;
+  }
+  .contacts-list__icon {
+    margin-right: 13px;
   }
 }
