@@ -1206,3 +1206,17 @@ body {
     margin-right: 13px;
   }
 }
+
+/* Импорт стилей блока bonus*/
+.bonus {
+  background-color: #ffd200;
+  font-size: 32px;
+  line-height: 50px;
+  padding-top: 85px;
+  padding-bottom: 95px;
+  text-align: center;
+}
+
+.bonus-item {
+  display: block;
+}
