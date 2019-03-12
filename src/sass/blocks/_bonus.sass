@@ -1,11 +1,57 @@
 .bonus
-  &-title__h
+  &-header
   background-color: $main-color
   font-size: 32px
   line-height: 50px 
   padding-top: 85px
   padding-bottom: 95px
-  text-align: center
- 
-  &-item 
-     display: block
+  text-align: center 
+  &-block 
+    display: flex
+    justify-content: space-between
+    margin-bottom: 100px
+    flex-wrap: wrap
+    &__item
+      flex-basis: 30%
+      background-color: $secondary
+      margin-top: 100px
+    &__text
+      font-size: 16px
+      line-height: 23px
+      padding-top: 20px
+      padding-left: 26px
+      margin-bottom: 50px
+      &__bold
+        +bold
+
+@media (max-width: 768px)
+  .bonus
+    padding-top: 70px
+    padding-bottom: 75px
+    &-header
+      font-size: 18px
+      line-height: 1.2
+      max-width: 260px
+      margin: auto
+      
+      
+    &-block
+      width: 95%
+      margin: auto
+      margin-top: 25px
+      &__item
+        flex-basis: 100%  
+        margin-top: 30px    
+      img
+        width: 100%
+      &__text
+        padding-top: 20px
+        font-size: 12px
+        line-height: 16.83px
+        padding-left: 20px
+        margin-bottom: 35px
+        max-width: 240px
+
+
+
+
