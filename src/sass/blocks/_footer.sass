@@ -1,10 +1,23 @@
 .footer
   position: relative
-.map
+.ymap-container
   position: absolute
   left: 0
   top: 0
   width: 50%
+  height: 640px
+  overflow: hidden
+  background: url(..//img/map/map-image.jpg)
+  background-position: center center
+  background-size: cover
+.map-yandex
+  height: 640px
+  position: relative  
+  z-index: 7
+  width: 100%
+  
+  cursor: pointer
+  background-color: transparent
 .contacts
   flex-basis: 50%
   padding-top: 90px
@@ -47,7 +60,7 @@
   .footer
     display: flex
     flex-direction: column-reverse
-  .map
+  .ymap-container
     width: 100%
     position: relative 
   .contacts

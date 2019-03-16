@@ -16,6 +16,9 @@
     padding-right: 90px
     padding-top: 54px
     position: relative
+    &__form
+      display: block
+      align-items: center    
   &__title
     max-width: 360px
     font-size: 24px
@@ -55,6 +58,8 @@
     text-decoration: none
     color: $text-color
     +bold
+.forma
+  display: flex
       
     
   
@@ -72,6 +77,7 @@
     &__text
       display: block
       width: 100%
+      padding-bottom: 0
       &:last-child
         padding-left: 0px
 @media (max-width: 768px)
@@ -104,6 +110,7 @@
     &__text
       padding-left: 7px
       margin-bottom: 6px
+      
       &:last-child
         padding-left: 7px
         margin-bottom: 3px
